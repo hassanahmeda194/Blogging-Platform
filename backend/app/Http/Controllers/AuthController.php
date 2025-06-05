@@ -73,4 +73,6 @@ class AuthController extends Controller
         return $this->success('User Logout Successfully');
     }
 
+    
+
 }

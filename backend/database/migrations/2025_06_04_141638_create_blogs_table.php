@@ -21,7 +21,7 @@ return new class extends Migration
             $table->boolean('is_published');
             $table->boolean('featured_blog')->default(false);
             $table->foreignId('user_id')->nullable()->constrained('users')->nullOnDelete();
-            $table->softDeletes();
+            $table->boolean('active')->default(true);
             $table->timestamps();
         });
     }
